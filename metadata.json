@@ -1,0 +1,6 @@
+{
+  "name": "DocuMorph - PDF & Multi-Format Document Conversion Suite",
+  "description": "Convert PDF documents into DOCX, DOC, Markdown, HTML, Text, JSON, CSV tables, EPUB, and high-resolution images with real-time preview and editing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
