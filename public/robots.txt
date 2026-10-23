@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imkathir.github.io/KathirDocConverter/sitemap.xml

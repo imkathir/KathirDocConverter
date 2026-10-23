@@ -30,6 +30,7 @@ import { FormatSelector } from './components/FormatSelector';
 import { BatchQueue } from './components/BatchQueue';
 import { HistoryDrawer } from './components/HistoryDrawer';
 import { ArchitectureModal } from './components/ArchitectureModal';
+import { SeoFaqSection } from './components/SeoFaqSection';
 import {
   FileText,
   Columns,
@@ -302,6 +303,7 @@ export default function App() {
                   loadingProgress={loadingProgress}
                   loadingStatus={loadingStatus}
                 />
+                <SeoFaqSection />
               </div>
             ) : (
               <div className="space-y-6">
