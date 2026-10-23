@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Upload, FileUp, Sparkles, FileText, ArrowRight, Table, CheckCircle2 } from 'lucide-react';
 import { SAMPLE_DOCUMENTS } from '../utils/samplePdfs';
+import { LogoIcon } from './Logo';
 
 interface UploadDropzoneProps {
   onFileSelect: (file: File) => void;
@@ -89,8 +90,8 @@ export const UploadDropzone: React.FC<UploadDropzoneProps> = ({
           </div>
         ) : (
           <div className="space-y-4">
-            <div className="w-14 h-14 mx-auto rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
-              <FileUp className="w-7 h-7" />
+            <div className="flex justify-center">
+              <LogoIcon size={56} />
             </div>
 
             <div className="space-y-1">

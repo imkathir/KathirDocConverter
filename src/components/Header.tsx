@@ -1,5 +1,6 @@
 import React from 'react';
 import { FileText, Upload, Layers, Clock, Settings2 } from 'lucide-react';
+import { LogoIcon } from './Logo';
 
 interface HeaderProps {
   activeTab: 'converter' | 'preview' | 'batch' | 'history';
@@ -18,7 +19,7 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   return (
     <header className="sticky top-0 z-30 flex items-center justify-between gap-8 px-6 py-3.5 bg-white border-b border-slate-200">
-      {/* Zone 1: Single text element wordmark */}
+      {/* Zone 1: Single text element wordmark with custom K insignia */}
       <a
         href="#"
         onClick={(e) => {
@@ -27,10 +28,8 @@ export const Header: React.FC<HeaderProps> = ({
         }}
         className="flex items-center gap-2.5 text-lg font-bold tracking-tight text-slate-900 whitespace-nowrap shrink-0 group"
       >
-        <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-indigo-600 text-white font-mono text-sm font-semibold shadow-xs">
-          KD
-        </span>
-        <span>KathirDocConverter</span>
+        <LogoIcon size={32} />
+        <span>Kathir<span className="text-indigo-600 font-extrabold">Doc</span>Converter</span>
       </a>
 
       {/* Zone 2: 4 clean single-line navigation links */}
